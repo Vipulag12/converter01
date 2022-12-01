@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convertor</title>
+</head>
+<body>
+        <div class="parent">
+            
+                <div class="start">
+                    <h1>Converter</h1>
+                    <hr>
+                    <div id="unitnav" class="form-row">
+                        <div class="form-group col">
+                           <span>From :-</span> 
+                            <select id="unit1" class="form-control">
+                            <option value="2">Binary</option>
+                            <option value="10">Decimal</option>
+                            <option value="8">Octal</option>
+                            <option value="16">Hexadecimal</option>
+                            </select>
+                        </div>
+                        <div class="form-group col2 col">
+                            <span>To :-</span> 
+                            <select id="unit2" class="form-control">
+                            <option value="2">Binary</option>
+                            <option value="10" selected>Decimal</option>
+                            <option value="8">Octal</option>
+                            <option value="16">Hexadecimal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="inputVal">
+                        <label for="enter your value">Enter Value</label>
+                        <div class="inputGroup">
+                            <input  type="text"  id="setVal">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="convert">
+                        <button class="convertVal btn"  id="clickToConvert">Convert</button>
+                        <button class="swap btn" id="swapbtn">Swap</button>
+                        <button class="btn" 
+                        id="resetbtn">Reset</button>
+                    </div>
+                    <br>
+                    <!-- <label for="">Output</label> -->
+                    <div class="output">
+                        <input  type="text" id="getVal">
+                    </div>
+                </div>
+            
+        </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

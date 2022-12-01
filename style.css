@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    height: 1px;
+    width: 10rem;
+    margin-bottom: 50px;
+    animation-timing-function: ease-in-out;
+    animation-name: vipul;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes vipul{
+    0%,20%{
+        background-color: black;
+    }
+    20%,50%{
+        background-color: rgb(209, 12, 12);
+    }
+    50%,100%{
+        background-color: rgb(34, 74, 203);
+    }
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+ 
+}
+h1{
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    /* box-sizing: content-box; */
+}
+
+input{
+    border-bottom:none ;
+    border-left: 2px solid blueviolet;
+    border-right: none;
+    border-top: none;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgb(143, 155, 158);
+    font-size: 20px;
+    /* border: none; */
+    border-radius: 7px;
+    margin-top: 8px;
+    padding: 10px;
+    width: 18rem;
+    outline: none;
+}
+
+select{
+    outline: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgb(143, 155, 158);
+    border-left: 3px  solid rgb(164, 164, 220);
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    /* font-weight: 600; */
+    font-weight: bolder;
+    width: 14rem;
+    padding: 5px;
+    margin: 10ppx 2px;
+}
+select:hover{
+    background-color: rgb(242, 247, 247);
+}
+button{
+    box-shadow: 0px 6px 6px 0px rgb(143, 155, 158);
+    background-color: rgb(49, 237, 49);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0px 2px;
+    font-weight: 600;
+    font-size: 18px;
+    width: 6rem;
+    height: 2.3rem;
+    border: none;
+    transition: 0.3s transform;
+}
+button:active{
+    transform: scale(0.9);
+}
+#swapbtn{
+    background-color: rgb(194, 144, 144);
+}
+#resetbtn{
+    background-color: yellowgreen;
+}
+span{
+    font-family: cursive;
+    font-size: 22px;
+}
+label{
+    font-family: cursive;
+    font-size: 22px;
+}
+.col{
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start{
+    box-shadow: 1px 1px 8px 1px rgb(133, 130, 130);
+    background: linear-gradient(to right, rgb(240, 239, 239), rgb(247, 225, 247));
+    border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(14, 14, 215), darkorchid) 3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(248, 238, 238);
+    height: 80%;
+    width: 30%;
+    animation-timing-function: linear;
+    animation-name: vipul2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.parent{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+.col2{
+    position: relative;
+    left: 24px;
+}
+
+@media screen and (max-width: 1080px) {
+    .start {
+      width: 90%;
+      height: 85%;
+    }
+  }
+
+  
