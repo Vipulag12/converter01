@@ -21,221 +21,174 @@ outputValue.disabled =true;
 convert.addEventListener('click', ()=>{
     let val1 = +v1.value;
     let val2 = +v2.value;
-    console.log("text");
 
-    if(val1 == 2 && val2 == 10){
+     if(val1 == 2 && val2 == 10){
         let text = enterValue.value;
-        if(!isNaN(Number('0B' + text))){
+         if(!isNaN(Number('0B' + text))){
             let convert = (parseInt(text, 2));
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
-
-//   for converting from Binary to Octal
-
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    // console.log("text");
-
-    if(val1 == 2 && val2 == 8){
+    }
+    else if(val1 == 2 && val2 == 8){
         let text = enterValue.value;
-        if(!(Number.isNaN('0B'+text))){
+         if(!(Number.isNaN('0B'+text))){
             let convert = (parseInt(text, 2)).toString(8);
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
+
 
 //   for converting from Binary to Hexadecimal
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 2 && val2 == 16){
+    else if(val1 == 2 && val2 == 16){
         let text = enterValue.value;
-        if(!(Number.isNaN('0B'+text))){
+         if(!(Number.isNaN('0B'+text))){
             let convert = (parseInt(text, 2)).toString(16);
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
+
 
 //   for converting from Hexadecimal to Binary
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 16 && val2 == 2){
+    else if(val1 == 16 && val2 == 2){
         let text = enterValue.value;
-        if(!(Number.isNaN('0x'+text))){
+         if(!(Number.isNaN('0x'+text))){
             let convert = (parseInt(text, 16)).toString(2);
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
+
 
 //   for converting from Hexadecimal to Decimal
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 16 && val2 == 10){
+    else if(val1 == 16 && val2 == 10){
         let text = enterValue.value;
-        if(!(Number.isNaN('0x'+text))){
+         if(!(Number.isNaN('0x'+text))){
             let convert = (parseInt(text, 16));
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
+
 
 //   for converting from Hexadecimal to Octal
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 16 && val2 == 8){
+    else if(val1 == 16 && val2 == 8){
         let text = enterValue.value;
-        if(!(Number.isNaN('0x'+text))){
+         if(!(Number.isNaN('0x'+text))){
             let convert = (parseInt(text, 16)).toString(8);
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
+
 
 //   for converting from Decimal to Binary
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 10 && val2 == 2){
+    else if(val1 == 10 && val2 == 2){
         let text = enterValue.value;
         if(!isNaN(text)){
             let convert = (parseInt(text, 10)).toString(2);
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
+
 
 //   for converting from Decimal to Octal
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 10 && val2 == 8){
+    else if(val1 == 10 && val2 == 8){
         let text = enterValue.value;
-        if(!isNaN(text)){
+         if(!isNaN(text)){
             let convert = (parseInt(text, 10)).toString(8);
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
+
 
 //   for converting from Decimal to Hexadecimal
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 10 && val2 == 16){
+    else if(val1 == 10 && val2 == 16){
         let text = enterValue.value;
-        if(!isNaN(text)){
+         if(!isNaN(text)){
             let convert = (parseInt(text, 10)).toString(16);
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
+
 
 //  . for converting from Octal to Binary
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 8 && val2 == 2){
+    else if(val1 == 8 && val2 == 2){
         let text = enterValue.value;
-        if(!(Number.isNaN('0O'+text))){
+         if(!(Number.isNaN('0O'+text))){
             let convert = (parseInt(text, 8)).toString(2);
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
+
 
 //  . for converting from Octal to Decimal
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 8 && val2 == 10){
+    else if(val1 == 8 && val2 == 10){
         let text = enterValue.value;
         if(!(Number.isNaN('0O'+text))){
             let convert = (parseInt(text, 8));
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
-});
+    }
 
 //  .for converting from Octal to Hexadecimal
 
-convert.addEventListener('click', ()=>{
-    let val1 = +v1.value;
-    let val2 = +v2.value;
-    console.log("text");
-
-    if(val1 == 8 && val2 == 16){
+    else if(val1 == 8 && val2 == 16){
         let text = enterValue.value;
-        if(!(Number.isNaN('0O'+text))){
+         if(!(Number.isNaN('0O'+text))){
             let convert = (parseInt(text, 8)).toString(16);
             outputValue.value = convert;
-        }else{
-            outputValue.value = "Enter Valid Digit";
         }
+        else{
+        outputValue.value = "Enter Valid Digit";
     }
+    }
+    
 });
 
+//   for converting from Binary to Octal
 
 //?------------------------------------------------------------------------------------->
 
-//  d Event on Swap Button
+//  Event on Swap Button
 
 swapbtn.addEventListener('click', ()=>{
     let changeTo = v2.value;
@@ -247,8 +200,8 @@ swapbtn.addEventListener('click', ()=>{
     let inputTo = outputValue.value;
     outputValue.value = inputFrom;
     enterValue.value = inputTo;
-});
 
+});
 //?------------------------------------------------------------------------------------->
 
 //  d Event on Reset Button
@@ -256,4 +209,4 @@ swapbtn.addEventListener('click', ()=>{
 reset.addEventListener("click", ()=>{
     outputValue.value = "";
     enterValue.value = "";
-  });
+});
